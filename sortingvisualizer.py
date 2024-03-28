@@ -47,6 +47,7 @@ def drawrectangle(arr,colorArray):
         canvas.create_rectangle(x0,y0,x1,y1,fill=colorArray[i])
         canvas.create_text(x0+2,y0,anchor=SW,text=str(arr[i]))
     root.update_idletasks()
+    root.update()
 
 def sorting():
     global arr
